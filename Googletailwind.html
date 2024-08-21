@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+    
+    <!-- Left Side: Login Form -->
+    <div class="bg-white w-full md:w-1/2 flex flex-col justify-center items-center p-6">
+        <h3 class="font-semibold text-xl md:text-2xl mb-4">Login</h3>
+        <p class="text-gray-400 mb-4 text-center">Enter your credentials to access your account</p>
+        <div class="border-2 border-gray-400 w-full md:w-3/4 lg:w-1/2 h-12 flex justify-center items-center mb-4">
+            <img class="w-8 h-8 mr-2" src="./google.png" alt="Google logo">
+            <p>Login with Google</p>
+        </div>
+        <div class="flex items-center w-full md:w-3/4 lg:w-1/2 mb-4">
+            <div class="border-t border-gray-300 flex-grow mr-2"></div>
+            <span class="text-gray-500">OR</span>
+            <div class="border-t border-gray-300 flex-grow ml-2"></div>
+        </div>
+        <!---- Email Section ---->
+        <div class="w-full md:w-3/4 lg:w-1/2 mb-4">
+            <label for="email" class="block mb-2">Email Address</label>
+            <input id="email" type="text" placeholder="email@gmail.com" class="border-2 border-gray-400 p-2 w-full">
+        </div>
+        <!----- Password Section ---->
+        <div class="w-full md:w-3/4 lg:w-1/2 mb-4">
+            <div class="flex justify-between mb-2">
+                <label for="password">Password</label>
+                <a href="#" class="text-blue-500 hover:underline">Forgot Password?</a>
+            </div>
+            <input id="password" type="password" placeholder="Password" class="border-2 border-gray-400 p-2 w-full">
+        </div>
+        <button class="border-2 bg-blue-500 w-full md:w-3/4 lg:w-1/2 text-white p-2 mt-4">Login</button>
+        <div class="flex justify-center items-center mt-4">
+            <span class="text-gray-400">Don't have an account?</span>
+            <a href="#" class="text-black ml-1 hover:underline">Register here</a>
+        </div>
+    </div>
+    
+    <!-- Right Side: Image Section (Visible on screens >= md) -->
+    <div class="bg-white w-full md:w-1/2 flex">
+        <img src="./fingerup.jpg" class="object-cover w-full h-full max-md:hidden" alt="Image">
+    </div>
+
+</body>
+</html>
